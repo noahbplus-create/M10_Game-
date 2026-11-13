@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi Space Defender</title>
+    <link href="Space_styles.css" rel="stylesheet" />
+    <script defer src="Space_game.js"></script>
+  
+
+</head>
+<body>
+
+    <h1>SPACE DEFENDER</h1>
+    <h3>Noah Bracken</h3>
+    <div id="tiger"></div>
+    <div id="scoreboard">SCORE: <span id="score">0</span> | LIVES: <span id="lives">3</span></div>
+    <canvas id="gameCanvas" width="540" height="400"></canvas>
+    <button id="playAgain" disabled>Play</button>    <div class="instructions">Use [←] [→] Arrow Keys to Move, Press [Spacebar] to Fire Torpedoes</div>
+    <div>Lore: You are the Defender, protect your planet at all cost from evil aliens trying to destroy you!!!</div>
+    
+    <audio id="Audio" autoplay loop>
+         <source src="PlanetY.ogg" type="audio/ogg">
+        <source src="PlanetY.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        const audio = document.getElementById("Audio");
+        audio.volume = 0.2;
+    </script>
+
+</body>
+</html>
